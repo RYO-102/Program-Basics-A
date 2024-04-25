@@ -20,7 +20,7 @@ int main()
 		}
 
 		/*‰º~•”*/
-		for(i = num -1; 1 <= i; i--){
+		for(i = num - 1; 1 <= i; i--){
 			for(j = 1; j <= i; j++){
 				printf("%d ",j);
 			}
