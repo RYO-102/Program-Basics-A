@@ -2,21 +2,30 @@
 
 int main()
 {
-	int b,p,cash;
+	/*•Ï”éŒ¾*/
+	int balance, price, cash_back;
 
-	b = 10000;
-	while(0 < b){
-		printf("cŠz‚Í%d‰~‚Å‚·\n",b);
+	/*‰Šú‰»*/
+	balance = 10000;
+
+	/*cŠz‚ª0‚æ‚è‘å‚«‚¢‚Æ‚«Œp‘±*/
+	while(0 < balance){
+		/*cŠz‚ÌŠm”F‚Æx•¥‹àŠz‚Ì“ü—Í*/
+		printf("cŠz‚Í%d‰~‚Å‚·\n",balance);
 		printf("x•¥‹àŠz:");
-		scanf("%d",&p);
-		if(b < p){
+		scanf("%d",&price);
+
+		/*cŠz‚ªx•¥‹àŠz‚ğã‰ñ‚Á‚Ä‚¢‚é‚©”»’è*/
+		if(balance < price){
 			printf("cŠz‚ª‘«‚è‚Ü‚¹‚ñ!\n");
 		}else{
-			b -= p;
-			cash = p / 1000;
-			b += cash * 100;
+			/*cŠz‚©‚çx•¥‹àŠz‚ğˆø‚«AƒLƒƒƒbƒVƒ…ƒoƒbƒN*/
+			balance -= price;
+			cash_back = price / 1000;
+			balance += cash_back * 100;
 		}
 	}
+	/*I—¹ƒƒbƒZ*/
 	printf("cŠz‚ª0‰~‚É‚È‚è‚Ü‚µ‚½\n");
 	printf("I—¹‚µ‚Ü‚·\n");
 }
