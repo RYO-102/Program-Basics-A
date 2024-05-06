@@ -4,27 +4,38 @@
 
 int main()
 {
-	int t,c;
-	c=0;
-	double p,h;
+	/*変数宣言*/
+	int time_number, count;
+	double probability, hit;
 
+	/*初期化*/
+	count = 0;
+
+	/*乱数設定*/
 	srand((unsigned)time(NULL));
+
+	/*当選確率が0～1に収まるまで続行*/
 	do{
 		printf("当選確率:");
-		scanf("%lf",&p);
-		if((p < 0) || (1 < p)){
+		scanf("%lf",&probability);
+		if((probability < 0) || (1 < probability)){
 			printf("0以上1以下の数値を入力してください\n");
 		}
-	}while((p < 0) || (1 < p));
+	}while((probability < 0) || (1 < probability));
 
-	for(t = 1; t <= 10; t++){
-		h = (double)rand() / RAND_MAX;
-		if(h <= p){
-			printf("%d回目:あたり!\n",t);
-			c++;
+	/*くじ引き*/
+	for(time_number = 1; time_number <= 10; time_number++){
+		/*乱数出力*/
+		hit = (double)rand() / RAND_MAX;
+
+		/*当選確率以下であればあたり*/
+		if(hit <= probability){
+			printf("%d回目:あたり!\n",time_number);
+			count++;
 		}else{
-			printf("%d回目:はずれ\n",t);
+			printf("%d回目:はずれ\n",time_number);
 		}
 	}
-	printf("%d回あたりました\n",c);
+	/*あたり回数の表示*/
+	printf("%d回あたりました\n",count);
 }

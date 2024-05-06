@@ -4,19 +4,24 @@
 
 int main()
 {
-	int r, ans;
+	/*•Ï”éŒ¾*/
+	int random, answer;
 
+	/*—”*/
 	srand((unsigned)time(NULL));
-	r = rand() % 6 + 1;
+	random = rand() % 6 + 1;
 
 	do{
+		/*“š‚¦‚Ì“ü—Í*/
 		printf("1`6‚Ì”:");
-		scanf("%d",&ans);
-		if(ans > r){
+		scanf("%d",&answer);
+
+		/*‘å¬‚Ì”»’f*/
+		if(answer > random){
 			printf("‚à‚Á‚Æ¬‚³‚¢”‚Å‚·\n");
-		}else if(ans < r){
+		}else if(answer < random){
 			printf("‚à‚Á‚Æ‘å‚«‚¢”‚Å‚·\n");
 		}
-	}while(ans != r);
+	}while(answer != random);	//“š‚¦‚Æo—Í‚µ‚½—”‚ªˆê’v‚·‚é‚Ü‚Å‘±s
 	printf("³‰ğ‚Å‚·\n");
 }
