@@ -1,4 +1,4 @@
-# program_kisoA
+# Program-Basics-A
 These programs were created by me in a university class.
 
 ## memorandum of git command
