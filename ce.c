@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]){
 	int result;
-	char error_do, command[100];
+	char command[100];
 
 	//引数の確認 将来的に2つ同時にコンパイルとかやるかも？
 	if(argc == 1){
