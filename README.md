@@ -1,32 +1,34 @@
 # Program-Basics-A
-These programs were created by me in a university class.
 
-## memorandum of git command
+This repository contains programs created during a university class.
+The class was held in the first semester of the first year at Tokyo City University, Faculty of Media and Information Studies, Department of Information Systems.
 
-### upload
- git add -A .  
- git commit -m ""  
- git push
- 
-### remove  
-git rm --cached -filename-  
+## How to Use
+This repository serves as a memorandum and record of achievements.
 
-## ce.cについて
-情報システム学科各位へ  
-このプログラムはコンパイルと実行をひとまとめにしたものです。  
-今後も改良する予定ですので要望があれば頑張って、連絡とってください。
+File numbers correspond to class sessions. Each file contains example programs and assignments.
 
-#### 作者
-[Xアカウント](https://twitter.com/R6244275215408)
+## About ce.c
 
-### 初めに
-+ リポジトリ内にあるであろうce.cを各々の社業場所のディレクトリ（プログラム基礎Aとかのファイル）にコピーしてください。 
-+ そのあといつもの要領で**cl ce.c**と入力  
-+ ce.exeができたら準備OKです。
+### For Students of the Department of Information Systems
+This program integrates the compilation and execution of C language programs into a single process.
+I plan to continue improving it, so feel free to contact me with any suggestions or requests.
 
-### 実行
-```ce ××××```  
-+ ××××の部分にファイル名を入力してください。(test.cであればtest)  
-+ この時、ファイル名は1つでお願いします。  
-+ コンパイル→実行と行いますがコンパイルの時点でエラーが出たら終了します。(要望があればエラーが出ても存在するexeファイルを実行できるようにするかも)  
-+ これで使用できるはずです。わからなかったら連絡とるか、gitアカウント作ってissuesにぶん投げといてください。
+#### Author
+[X Account](https://x.com/RequalVdivI)
+
+### Getting Started
+1. Copy `ce.c` from this repository to your working directory (e.g., "Program Basics A" folder).
+2. Open the terminal and enter the following command:
+   ```cl ce.c```
+3. Once `ce.exe` is generated, you are ready to proceed.
+
+### Execution
+To execute a C program, use the following command:
+  ```ce <filename>```
+- Replace `<filename>` with the name of your C file (e.g., use `test` for `test.c`).
+- Only one file name should be specified at a time.
+- The program first compiles and then executes the file. If a compilation error occurs, execution will be halted.
+- If requested, I may update the program to allow execution of an existing `.exe` file even if compilation fails.
+
+If you have any questions, feel free to contact me or create an issue on GitHub.
